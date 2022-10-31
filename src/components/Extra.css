@@ -1,0 +1,40 @@
+/*
+      BOTTOM WAVES
+*/
+.custom-shape-divider-bottom-1645648616 {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1645648616 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 73px;
+}
+
+.custom-shape-divider-bottom-1645648616 .shape-fill {
+    fill: #495057;
+}
+
+/*
+      TOP WAVES
+*/
+.custom2-shape-divider-bottom-1645648616 {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom2-shape-divider-bottom-1645648616 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 73px;
+}
+
+.custom2-shape-divider-bottom-1645648616 .shape-fill {
+    fill: #212529;
+}

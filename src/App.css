@@ -1,38 +1,514 @@
-.App {
+/*
+        IMPORTS
+*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;900&display=swap');
+@import url('./components/Extra.css');
+
+/*
+        FONTS AND GLOBAL DEFINITIONS
+*/
+*{
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth 
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.App{
+  display: flex;
+  color: #F8F9FA;
+  flex-direction: column;
+}
+.bannerContainer{
+  background-color: #212529;
+}
+.spe{
+  width: 80%;
+  margin: auto;
+}
+/*
+        NAVBAR STYLE
+*/
+nav{
+  display: flex;
+  padding: 2rem;
+  background-color: #212529;
+}
+
+nav a{
+  margin-right: auto;
+}
+
+nav a img{
+  width: 9rem;
+  height: auto;
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+}
+
+nav ul li{
+  padding: 1.6rem 2em;
+  text-decoration: none;
+  color: #F8F9FA;
+}
+
+.noStyle{
+  text-decoration: none;
+  color: #F8F9FA;
+}
+
+/*
+        BANNER STYLE
+*/
+.banner{
+  margin: 4rem 0 0 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #212529;
+}
+
+.banner #name{
+  font-size: 2rem;
+}
+
+.banner h1{
+  font-size: 3.5rem;
+  /*
+  color: #212529;
+  text-shadow: -1px -1px 0 #F8F9FA, 1px -1px 0 #F8F9FA, -1px 1px 0 #F8F9FA, 1px 1px 0 #F8F9FA;
+  */
+  color: #DEE2E6;
+  margin-bottom: .5rem;
+}
+
+.banner #whoami{
+  font-size: 1.5rem;
+}
+
+.banner #whoami strong{
+  font-size: 1rem;
+  padding: .35rem .5rem .35rem .5rem;
+  margin: 0 .5rem;
+  background-color: #F8F9FA;
+  color: #212529;
+  border-radius: 1rem;
+}
+
+.banner #me{
+  width: 10.5rem;
+  height: auto;
+  margin-left: 3rem;
+}
+.contactButton{
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0 2rem 0;
+}
+.contactButton #contact {
+  color: #E9ECEF;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  border: 1px solid #E9ECEF;
+  background-color: #212529;
+  color: #E9ECEF;
+  border-radius: 5px;
+  align-self: center;
+  transition: .3s;
+  margin-bottom: 4rem;
+
+}
+
+.contactButton #contact:hover{
+  background-color: #E9ECEF;
+  color: #212529;
+}
+
+/*
+        ABOUT ME STYLE
+*/
+.aboutme{
+  color: #212529;
+  margin: 4rem 20%;
+}
+.aboutme h2{
+  font-size: 5rem;
+  margin: 1rem 0 0;
+}
+
+.aboutme .general{
+  font-size: 2rem;
+  width: 40%;
+}
+
+.aboutme .comunication{
+  font-size: 2rem;
+  width: 40%;
+  margin-left: auto;
+  padding-top: 2rem;
+  text-align: end;
+}
+
+.aboutme .comunication #contact{
+  text-decoration: none;
+  color:#1c7cdb
+}
+
+.aboutme .lang{
+  font-size: 2rem;
+  width: 70%;
+  margin: auto;
+  padding-top: 2rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.aboutme .lang b{
+  color: #212529;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*
+        EXPERIENCE STYLE
+*/
+.experience{
+  color: #212529;
+  margin: 4rem 20%;
+
+}
+.experience h2{
+  font-size: 5rem;
+  margin: 1rem 0 2rem 0;
+  text-align: end;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.experience .JobExperience{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience .JobExperience ul{
+  width: 90%;
+  height: auto;
+  background-color: rgba(241, 241, 241, 0.747);
+  padding: 2rem;
+  border-radius: 2rem;
+  font-size: large;
+  margin: 0 0 2rem 0;
+}
+
+.experience .JobExperience .imageJob{
+  width: auto;
+  max-height: 6rem;
+  margin-right: 1rem;
+}
+
+.experience .JobExperience ul{
+  list-style: none;
+  
+}
+.experience .JobExperience ul li{
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+/*
+        SKILLS SECTION
+*/
+.skills{
+  color: #212529;
+  margin: 4rem 20%;
+}
+.skills h2{
+  font-size: 5rem;
+  margin: 1rem 0 2rem 0;
+}
+.skill{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+.skill .skillContainer{
+  height: 20px;
+  width: 100%;
+  background-color: #e0e0de;
+  border-radius: 1rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.skillDesc{
+  font-size: 4rem;
+  padding-right: 2rem;
+}
+.skillFillerBar{
+  height: 100%;
+  border-radius: 1rem;
+  text-align: right;
+  padding-right: .5rem;
+}
+
+.skillFillerBar .skillBar{
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+/*
+        LANGUAGES SECTION
+*/
+.languages{
+  color: #212529;
+  margin: 4rem 20%;
+}
+.languages h2{
+  font-size: 5rem;
+  text-align: end;
+  margin: 1rem 0 2rem 0;
+}
+.language{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+.language .languageContainer{
+  height: 20px;
+  width: 100%;
+  background-color: #e0e0de;
+  border-radius: 1rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.languageDesc{
+  font-size: 2rem;
+  padding-left: 2rem;
+  font-weight: bold;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+}
+.languageFillerBar{
+  height: 100%;
+  border-radius: 1rem;
+  text-align: right;
+  padding-right: .5rem;
+}
+
+.languageFillerBar .languageBar{
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+/*
+        PROJECTS STLYE
+*/
+.projects{
+  color: #212529;
+  margin: 4rem 20%;
+}
+.projects h2{
+  font-size: 5rem;
+  margin: 1rem 0 2rem 0;
+}
+.projects .gallery{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.projects .gallery .project{
+  flex-basis: 32%;
+  margin-bottom: 2%;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px 7px rgba(59, 59, 59, 0.097);
+}
+.projects .gallery .project a img{
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+
+/*
+        CONTACT STYLE
+*/
+
+.contact{
+  color: #212529;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.contact .desc{
+  padding: 0;
   display: flex;
   flex-direction: column;
+  width: 20rem;
+  margin-top: 0rem;
+}
+
+.contact .desc p{
+  font-size: 1.25rem;
+}
+
+.contact .desc .social{
+  margin-top: 6rem;
+}
+
+.contact .desc .social h2{
+  font-size: 2rem;
+}
+
+.contact .desc .social ul{
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+.contact .desc .social ul li {
+  display: flex;
   align-items: center;
+  color: #212529;
+  background-color: #E9ECEF;
+  margin: 1rem 0;
+  border-radius: .4rem;
+}
+
+.contact .desc .social ul li .iconsocail{
+  padding: 1rem;
+}
+
+.contactForm{
+  display: flex;
+  font-size: 1.5rem;
+  color: #212529;
+}
+
+.contactForm form{
+  background-color: #E9ECEF;
+  border-radius: 0 0 1rem 1rem;
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  border-top: .5rem solid #6C757D;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.contactForm input{
+  margin: .5rem 0 1.5rem 0;
+  padding: .5rem;
+  outline: none;
+  border: none;
+  width: 16rem;
+  background: transparent;
+  border-bottom: 1px solid #CED4DA;
+}
+
+.contactForm textarea{
+  resize: none;
+  height: 10rem;
+  margin: .5rem 0 1rem 0;
+  padding: .5rem;
+  outline: none;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #CED4DA;
+}
+
+.contactForm p{
+  font-size: 1rem;
+  text-align: end;
+}
+
+.contactForm button{
+  padding: 1rem 2rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  border: 1px solid #E9ECEF;
+  background-color: #212529;
+  color: #E9ECEF;
+  border-radius: 5px;
+  align-self: center;
+  margin: 1rem 0 1rem 0;
+  transition: .3s;
+}
+
+.contactForm button:hover{
+  background-color: #E9ECEF;
+  color: #212529;
+  border: 1px solid #212529;
+}
+
+
+/*
+        FOOTER STYLE
+*/
+
+
+
+footer{
+  background-color: #495057;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  color: #F8F9FA;
 }
 
-.App-link {
-  color: #61dafb;
+footer .logo{
+  width: 10rem;
+  height: auto;
+  margin-top: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer .leyend{
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+footer hr{
+  width: 40%;
+  margin: 1rem 0 2rem 0;
+}
+
+footer .social{
+  font-size: 2rem;
+}
+
+footer .social ul{
+  list-style: none;
+  display: flex;
+}
+
+footer .social ul li{
+  margin: 0 1.5rem;
+  padding: 1rem 1rem .6rem 1rem ;
+  border: 2px solid #7c808593;
+  border-radius: 100%;
+  transition: .3s;
+}
+
+footer .social ul li:hover{
+  color: #212529;
+  background-color: #F8F9FA;
+}
+
+footer .signature{
+  padding: 3rem;
 }

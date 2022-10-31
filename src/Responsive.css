@@ -1,0 +1,167 @@
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    /*
+        NAVBAR STYLE
+    */
+    nav{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    nav ul{
+        flex-direction: column;
+        text-align: center;
+
+    }
+    nav a img{
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    nav ul li{
+        font-size: 1.25rem;
+    }
+    /*
+        BANNER STYLE
+    */
+    .banner{
+        margin: 2rem 0 0 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: #212529;
+        text-align: center;
+    }
+    .banner #name{
+        font-size: 1rem;
+    }
+    .banner h1{
+        font-size: 1.25rem;
+    }
+    .banner #whoami{
+        font-size: 1rem;
+    }
+    .banner #whoami strong{
+        font-size: .75rem;
+        padding: .35rem .5rem .35rem .5rem;
+        margin: 0 .5rem;
+        background-color: #F8F9FA;
+        color: #212529;
+        border-radius: 1rem;
+    }
+    .banner #me{
+        width: 12rem;
+        height: auto;
+        margin-top: 3rem;
+        margin-left: 0;
+    }
+
+    /*
+        ABOUT ME STYLE
+    */
+    .aboutme{
+        color: #212529;
+        margin: 1rem 20%;
+    }
+    .aboutme h2{
+        font-size: 3.5rem;
+        margin: 1rem 0 0;
+    }
+    .aboutme .general{
+        font-size: 1.5rem;
+        width: 100%;
+        text-align: justify;
+    }
+    .aboutme .comunication{
+        font-size:1.5rem;
+        width: 100%;
+        margin-left: auto;
+        padding-top: 2rem;
+        text-align: justify;
+    }
+    .aboutme .lang{
+        font-size: 1.75rem;
+        width: 95%;
+        margin: auto;
+        padding-top: 2rem;
+        text-align: center;
+    }
+    /*
+        EXPERIENCE STYLE
+    */
+    .experience{
+        color: #212529;
+        margin: 1rem 20%;
+    }
+    .experience h2{
+        font-size: 3rem;
+        margin: 0 0 1rem 0;
+        text-align: end;
+    }
+    .experience .JobExperience{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .experience .JobExperience .imageJob{
+        margin-top: 1rem;
+        margin-bottom: .75rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    /*
+            SKILLS STLYE
+    */
+    .skills h2{
+        text-align: center;
+    }
+    .skills{
+        margin: 2rem 5%;
+    }
+
+    /*
+            LANGUAGES STLYE
+    */
+    .languages h2{
+        text-align: center;
+        font-size: 4rem;
+    }
+    .languages{
+        margin: 2rem 5%;
+    }
+
+    /*
+            PROJECTS STYLE
+    */
+    .projects h2{
+        text-align: center;
+        font-size: 4rem;
+    }
+    .projects{
+        margin: 2rem 5%;
+    }
+    .projects .gallery .project{
+        flex-basis: 100%;
+        margin-bottom: 3rem;
+    }
+
+    /*
+            CONTACT STYLE
+    */
+    .contact .desc{
+        padding:0;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-top: 3rem;
+        text-align: center;
+    }
+    .contact .desc .social{
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+}
