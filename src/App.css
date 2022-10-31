@@ -207,8 +207,8 @@ nav ul li{
 }
 
 .experience .JobExperience .imageJob{
-  width: auto;
-  max-height: 6rem;
+  width: 96px;
+  height: auto;
   margin-right: 1rem;
 }
 
