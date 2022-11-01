@@ -134,6 +134,35 @@ nav ul li{
 }
 
 /*
+        DOWNLOAD STYLE
+*/
+.downloadButton{
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0 2rem 0;
+}
+.downloadButton .download {
+  color: #E9ECEF;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  border: 1px solid #212529;
+  background-color: #212529;
+  border-radius: 5px;
+  align-self: center;
+  transition: .3s;
+  margin-bottom: 4rem;
+
+}
+
+.downloadButton .download:hover{
+  background-color: #E9ECEF;
+  color: #212529;
+}
+
+/*
         ABOUT ME STYLE
 */
 .aboutme{

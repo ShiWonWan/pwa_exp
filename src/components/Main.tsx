@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 import { Banner } from './Banner'
 import { AboutMe } from './AboutMe'
 
@@ -24,6 +26,11 @@ export const Main = () => {
       <Languages />
       <hr className='spe'/>
       <Projects />
+      <hr className='spe'/>
+      <br/><br/>
+      <div className="downloadButton">
+        <Link to='/cv.pdf' className='download' target="_blank" download>Downlad CV!</Link>
+      </div>
     </>
   )
 }
